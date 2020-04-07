@@ -27,11 +27,47 @@ public class Add {
     }
 
     public int getSumOfEvens(int leftBorder, int rightBorder) {
-        throw new NotImplementedException();
+        int sumOfEvens = 0;
+        int start = 0;
+        int end = 0;
+        if (leftBorder <= rightBorder) {
+            start = leftBorder;
+            end = rightBorder;
+        }
+        else if (leftBorder > rightBorder) {
+            start = rightBorder;;
+            end = leftBorder;
+        }
+        else {
+            throw new NotImplementedException();
+        }
+        for (int index = start; index <= end; index++) {
+            if (index % 2 == 0)
+                sumOfEvens += index;
+        }
+        return sumOfEvens;
     }
 
     public int getSumOfOdds(int leftBorder, int rightBorder) {
-        throw new NotImplementedException();
+        int sumOfOdds = 0;
+        int start = 0;
+        int end = 0;
+        if (leftBorder <= rightBorder) {
+            start = leftBorder;
+            end = rightBorder;
+        }
+        else if (leftBorder > rightBorder) {
+            start = rightBorder;;
+            end = leftBorder;
+        }
+        else {
+            throw new NotImplementedException();
+        }
+        for (int index = start; index <= end; index++) {
+            if (index % 2 == 1)
+                sumOfOdds += index;
+        }
+        return sumOfOdds;
     }
 
 }
